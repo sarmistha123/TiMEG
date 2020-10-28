@@ -1,8 +1,7 @@
 
-Code A. Finds genotype and methylation within a gene + creates a table with gene name and corresponding number of methylation sites and genotypes
+"A. Finds genotype and methylation within a gene + creates a table with gene name and corresponding number of methylation sites and genotypes"
 
 Run code: temp0.1.R
-Input code: temp0.0.R
 
 Input data:
 1.	control.geno.file.txt
@@ -33,46 +32,21 @@ Subject_ID_69
 
 3.	allgene.matrix.txt
 
-GeneID
-Gene.name
-num.Genotype
-num.Methylation
-1
-TMEM165
-16
-10
-2
-ZDHHC16
-5
-18
-3
-PHC1
-0
-7
-4
-RHD
-6
-3
-5
-NIT1
-8
-2
-6
-..
-..
-..
-7
-..
-..
-..
+Gives a table with columns GeneID, Gene.name, num.Genotype, num.Methylation.
+First row: 1, TMEM165, 16, 10
+Second row: 2, ZDHHC16, 5, 18
+Third row: 3, PHC1, 0, 7
+Fourth row: 4, RHD, 6, 3
+Fifth row: 5, NIT1, 8, 2
+and so on. 
 
-4.	geneid_1_TMEM165.txt, geneid_2_ ZDHHC16.txt, geneid_3_ PHC1.txt, etc.
+4.	Generates data files such as, geneid_1_TMEM165.txt, geneid_2_ ZDHHC16.txt, geneid_3_ PHC1.txt, etc.
 
 [generic name: geneid_GeneID_Gene.name.txt]
 
 
 
-Code B. Shell script for using TiMEG Pipeline and generating result files having p-values
+"B. Shell script for using TiMEG Pipeline and generating result files having p-values"
 
 Run code: submit3.sh
 Input data:
@@ -87,9 +61,10 @@ fileid.GeneID.Gene.name.methno.genotypeno.txt]
 
 Run code: submit_R4.sh
 
-Input code:
-submit_preR3.sh
-TiMEG.R
+Input code: 
+
+1. submit_preR3.sh
+2. TiMEG.R
 
 Output files:
 
