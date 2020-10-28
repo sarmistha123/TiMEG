@@ -94,7 +94,7 @@ TiMEG.R
 Output files:
 
 Eg. Rresult_TSC1.1.txt
-[generic: Rresult_ Gene.name.ii.txt, where, ii=1,2,…, num.Genotype]
+[generic: Rresult_ Gene.name.j.txt, where, j=1,2,…, num.Genotype]
 
 
 
